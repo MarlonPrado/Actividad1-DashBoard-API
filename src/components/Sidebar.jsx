@@ -10,12 +10,14 @@ import { RiBillFill } from "react-icons/ri";
 import { BsBarChartFill } from "react-icons/bs";
 import { BsFillCartFill } from "react-icons/bs";
 import { BsFillPersonBadgeFill } from "react-icons/bs";
+import SidebarHamburguer from './SidebarHamburguer';
 
 export default function Sidebar() {
   const [currentLink, setCurrentLink] = useState(1);
   return (
     <>
     <Section>
+      <SidebarHamburguer/>
     <div className="top">
       <div className="brand">
         <BsBuilding/>

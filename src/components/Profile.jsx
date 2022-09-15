@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import image from "../assets/ProfilePicture.png";
+import {CgProfile} from "react-icons/cg";
+
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { cardStyles } from "./ReusableStyles";
 export default function Profile() {
@@ -12,7 +14,7 @@ export default function Profile() {
       <div className="title">
         <h2>Marlon Stiven</h2>
         <h5>
-          <HiOutlineLocationMarker /> Auxiliar de Ventas
+          <CgProfile /> Auxiliar de Ventas
         </h5>
       </div>
       <div className="info">
@@ -39,10 +41,14 @@ const Section = styled.section`
   align-items: center;
   gap: 1rem;
   .image {
+    margin-top: 0.43rem;
     max-height: 10rem;
     overflow: hidden;
     border-radius: 20rem;
     img {
+      padding-top: 0.8rem;
+
+      width: 100%;
       height: 10rem;
       width: 10rem;
       object-fit: cover;
