@@ -4,14 +4,12 @@ import {BiSearch} from 'react-icons/bi';
 export default function Navbar() {
   return (
     <Nav>
+    
       <div className="title">
-        <h4> Hola Edinson, que tengas un excelente dia </h4>
-        <h1>Bienvenido a <span>Justo y Bueno - Plataforma Principal</span></h1>
+       
+        <h1>Bienvenido a <span>Tiendas Bam Bam - Plataforma Principal</span></h1>
       </div>
-      <div className="search">
-        <BiSearch/>
-        <input type="text" placeholder='¿Que buscas?'/>
-      </div>
+      
     </Nav>
   );
 }
@@ -22,6 +20,7 @@ const Nav = styled.nav`
 display:flex;
 justify-content: space-between;
 color: black;
+margin-bottom: 0.2rem;
 .title{
   h1{
     span{
